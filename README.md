@@ -39,7 +39,7 @@ PhishGuard AI is an advanced machine learning-powered phishing detection system 
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Atharv5873/PhishGuard-AI.git
+git clone https://github.com/sohampujari/PhishGuardAI.git
 cd PhishGuard-AI
 ```
 
