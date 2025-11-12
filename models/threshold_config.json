@@ -1,0 +1,13 @@
+{
+  "calibrated_threshold": 0.23205342237061768,
+  "precision_min": 0.75,
+  "achieved_precision": 0.23333333333333334,
+  "achieved_recall": 1.0,
+  "achieved_f1": 0.37837837837837834,
+  "sample_count": 600,
+  "base_threshold": 0.23205342237061768,
+  "low_tld_threshold": 0.18205342237061767,
+  "high_cse_threshold": 0.2820534223706177,
+  "phishing_threshold": 0.18,
+  "notes": "Added phishing_threshold for tri-band style separation; suspected threshold remains calibrated base."
+}

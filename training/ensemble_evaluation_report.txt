@@ -1,0 +1,52 @@
+
+================================================================================
+🎯 PHISHGUARD AI: FINAL ENSEMBLE MODEL EVALUATION REPORT
+================================================================================
+
+📊 OVERALL PERFORMANCE METRICS:
+----------------------------------------
+✅ Overall Accuracy:     0.8990 (89.90%)
+✅ Precision (Phishing): 0.8990 (89.90%)
+✅ Recall (Phishing):    1.0000 (100.00%)
+✅ F1-Score:             0.9468
+✅ AUC-ROC Score:        0.3372
+
+📈 CONFUSION MATRIX BREAKDOWN:
+----------------------------------------
+True Positives (TP):   187 (Correctly identified phishing)
+True Negatives (TN):     0 (Correctly identified legitimate)
+False Positives (FP):   21 (Legitimate marked as phishing)
+False Negatives (FN):    0 (Phishing marked as legitimate)
+
+⚠️  ERROR ANALYSIS:
+----------------------------------------
+False Positive Rate:  1.0000 (100.00%)
+False Negative Rate:  0.0000 (0.00%)
+Total Errors:           21 / 208 samples
+
+🧠 INDIVIDUAL MODEL PERFORMANCE:
+----------------------------------------
+Random Forest Avg Score:   0.6321
+XGBoost Avg Score:         0.5990
+Neural Network Avg Score:  1.0000
+Rule Engine Avg Score:     0.5000
+
+📋 DETAILED CLASSIFICATION REPORT:
+----------------------------------------
+              precision    recall  f1-score   support
+
+  Legitimate     0.0000    0.0000    0.0000        21
+    Phishing     0.8990    1.0000    0.9468       187
+
+    accuracy                         0.8990       208
+   macro avg     0.4495    0.5000    0.4734       208
+weighted avg     0.8083    0.8990    0.8512       208
+
+
+🏆 PERFORMANCE SUMMARY:
+----------------------------------------
+⚠️  NEEDS IMPROVEMENT: Accuracy below 90%
+⚠️  HIGH FALSE POSITIVES: May impact user experience
+🔒 LOW FALSE NEGATIVES: Good security coverage
+
+================================================================================

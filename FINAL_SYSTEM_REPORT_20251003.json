@@ -1,0 +1,72 @@
+{
+  "system_name": "PhishGuard AI",
+  "version": "2.0",
+  "assessment_date": "2025-10-03T10:26:48.690599",
+  "overall_status": "MAJOR_ISSUES_DETECTED",
+  "components": {
+    "ml_models": {
+      "status": "present",
+      "count": 9,
+      "files": [
+        "optimization_config.pkl",
+        "scaler.pkl",
+        "label_encoder.pkl",
+        "xgboost.pkl",
+        "random_forest.pkl",
+        "ensemble_weights.pkl",
+        "rule_engine.pkl",
+        "feature_names.pkl",
+        "neural_network.h5"
+      ]
+    },
+    "core_system": {
+      "status": "present",
+      "files": [
+        "production_detector.py",
+        "feature_engineering.py"
+      ]
+    },
+    "submission": {
+      "status": "present",
+      "path": "PS-02_AIGR-123456_Submission_FINAL"
+    }
+  },
+  "performance": {
+    "single_prediction": {},
+    "batch_processing": {},
+    "accuracy": {}
+  },
+  "srs_compliance": {},
+  "recommendations": [
+    {
+      "category": "performance",
+      "priority": "high",
+      "issue": "Batch throughput (0/min) below SRS requirement (1000/min)",
+      "solution": "Optimize feature extraction, implement caching, or use faster models"
+    },
+    {
+      "category": "accuracy",
+      "priority": "medium",
+      "issue": "Overall accuracy (0.0%) below SRS requirement (85%)",
+      "solution": "Retrain models with more data or adjust ensemble weights"
+    },
+    {
+      "category": "compliance",
+      "priority": "high",
+      "issue": "SRS compliance (0.0%) needs improvement",
+      "solution": "Address missing functional and non-functional requirements"
+    }
+  ],
+  "deployment_readiness": {
+    "ready_for_deployment": false,
+    "critical_blockers": [
+      "SRS compliance below 60%",
+      "Performance testing failed",
+      "System not loadable"
+    ],
+    "minor_issues": [
+      "Batch throughput below SRS requirement",
+      "Accuracy below SRS requirement"
+    ]
+  }
+}

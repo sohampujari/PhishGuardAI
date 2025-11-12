@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+dashboard.log
+
+# Database backups and temp files
+mongodb_backup_*/
+*.zip
+migration.log
+whitelist_migration.log
+
+# System/temp files
+.DS_Store
+Thumbs.db
+*.tmp
+*~
+
+# Test outputs and debugging files
+test_*.py
+debug_*.py
+simple_*.py
+check_*.py
+
+# Large data files
+*.xlsx
+*.xls
+*.csv
+
+# Model files (if too large)
+models/*.pkl
+models/*.joblib
+
+# Metrics and reports (keep main ones, exclude test runs)
+metrics_*.json
+*_test_report_*.json
+system_test_report_*.json
+
+# Lock files
+.~lock.*
+
+# Backup files
+*_backup_*
+backup_*

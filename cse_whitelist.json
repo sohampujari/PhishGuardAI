@@ -1,0 +1,116 @@
+{
+  "source": "synced_from_mongodb",
+  "organizations": [
+    {
+      "name": "State Bank of India (SBI)",
+      "domains": [
+        "onlinesbi.sbi",
+        "sbi.co.in",
+        "sbicard.com",
+        "yonobusiness.sbi",
+        "sbiepay.sbi",
+        "sbilife.co.in"
+      ]
+    },
+    {
+      "name": "ICICI Bank",
+      "domains": [
+        "icicibank.com",
+        "icicicareers.com",
+        "icicidirect.com",
+        "icicilombard.com",
+        "iciciprulife.com"
+      ]
+    },
+    {
+      "name": "HDFC Bank",
+      "domains": [
+        "hdfcbank.com",
+        "hdfc.com",
+        "hdfcergo.com",
+        "hdfclife.com"
+      ]
+    },
+    {
+      "name": "Punjab National Bank (PNB)",
+      "domains": [
+        "pnbindia.in",
+        "netpnb.com"
+      ]
+    },
+    {
+      "name": "Bank of Baroda (BoB)",
+      "domains": [
+        "bankofbaroda.in",
+        "bobibanking.com"
+      ]
+    },
+    {
+      "name": "National Informatics Centre (NIC)",
+      "domains": [
+        "nic.gov.in",
+        "email.gov.in",
+        "kavach.mail.gov.in",
+        "accounts.mgovcloud.in"
+      ]
+    },
+    {
+      "name": "Registrar General and Census Commissioner of India (RGCCI)",
+      "domains": [
+        "dc.crsorgi.gov.in"
+      ]
+    },
+    {
+      "name": "Indian Railway Catering and Tourism Corporation (IRCTC)",
+      "domains": [
+        "irctc.co.in",
+        "irctc.com"
+      ]
+    },
+    {
+      "name": "Airtel",
+      "domains": [
+        "airtel.in",
+        "airtel.com"
+      ]
+    },
+    {
+      "name": "Indian Oil Corporation Limited (IOCL)",
+      "domains": [
+        "iocl.com"
+      ]
+    }
+  ],
+  "domains": [
+    "accounts.mgovcloud.in",
+    "airtel.com",
+    "airtel.in",
+    "bankofbaroda.in",
+    "bobibanking.com",
+    "dc.crsorgi.gov.in",
+    "email.gov.in",
+    "hdfc.com",
+    "hdfcbank.com",
+    "hdfcergo.com",
+    "hdfclife.com",
+    "icicibank.com",
+    "icicicareers.com",
+    "icicidirect.com",
+    "icicilombard.com",
+    "iciciprulife.com",
+    "iocl.com",
+    "irctc.co.in",
+    "irctc.com",
+    "kavach.mail.gov.in",
+    "netpnb.com",
+    "nic.gov.in",
+    "onlinesbi.sbi",
+    "pnbindia.in",
+    "sbi.co.in",
+    "sbicard.com",
+    "sbiepay.sbi",
+    "sbilife.co.in",
+    "yonobusiness.sbi"
+  ],
+  "updated_at": "2025-11-08T13:54:42.505804Z"
+}

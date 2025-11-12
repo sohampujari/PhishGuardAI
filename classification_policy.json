@@ -1,0 +1,8 @@
+{
+  "enable_downgrade": true,
+  "downgrade_margin": 0.05,
+  "downgrade_confidence_norm": 0.60,
+  "enable_upgrade": true,
+  "upgrade_confidence_threshold": 30.0,
+  "notes": "Adjust enable_downgrade=false for raw phishing recall; tweak margins to balance precision vs recall."
+}

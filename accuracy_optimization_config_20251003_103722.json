@@ -1,0 +1,240 @@
+{
+  "timestamp": "2025-10-03T10:37:22.769888",
+  "version": "2.0_optimized",
+  "ensemble_weights": {
+    "balanced": {
+      "random_forest": 0.25,
+      "xgboost": 0.4,
+      "neural_network": 0.2,
+      "rule_engine": 0.15
+    },
+    "phishing_focused": {
+      "random_forest": 0.2,
+      "xgboost": 0.35,
+      "neural_network": 0.15,
+      "rule_engine": 0.3
+    },
+    "precision_focused": {
+      "random_forest": 0.35,
+      "xgboost": 0.45,
+      "neural_network": 0.15,
+      "rule_engine": 0.05
+    },
+    "recall_focused": {
+      "random_forest": 0.15,
+      "xgboost": 0.25,
+      "neural_network": 0.25,
+      "rule_engine": 0.35
+    }
+  },
+  "dynamic_thresholds": {
+    "default": 0.5,
+    "cse_similar": {
+      "threshold": 0.3,
+      "description": "Domains similar to CSE domains"
+    },
+    "suspicious_tld": {
+      "threshold": 0.4,
+      "description": "Domains with suspicious TLDs"
+    },
+    "legitimate_similar": {
+      "threshold": 0.7,
+      "description": "Domains similar to legitimate services"
+    },
+    "high_confidence_keywords": {
+      "threshold": 0.2,
+      "description": "Domains with high-confidence phishing keywords"
+    }
+  },
+  "advanced_rules": {
+    "high_confidence_phishing": {
+      "suspicious_tlds": {
+        "patterns": [
+          ".tk",
+          ".ml",
+          ".ga",
+          ".cf",
+          ".top",
+          ".icu",
+          ".pw"
+        ],
+        "score": 0.8,
+        "description": "Free/suspicious TLD"
+      },
+      "phishing_keywords": {
+        "patterns": [
+          "secure",
+          "login",
+          "verify",
+          "update",
+          "confirm",
+          "suspended",
+          "limited",
+          "expired",
+          "urgent"
+        ],
+        "score": 0.6,
+        "description": "Common phishing keywords"
+      },
+      "typosquatting": {
+        "patterns": [
+          "substitution",
+          "insertion",
+          "omission",
+          "transposition"
+        ],
+        "score": 0.7,
+        "description": "Typosquatting patterns"
+      }
+    },
+    "medium_confidence_phishing": {
+      "suspicious_length": {
+        "min_length": 30,
+        "score": 0.4,
+        "description": "Unusually long domain"
+      },
+      "subdomain_count": {
+        "max_subdomains": 4,
+        "score": 0.3,
+        "description": "Multiple subdomains"
+      },
+      "number_density": {
+        "threshold": 0.3,
+        "score": 0.5,
+        "description": "High number density"
+      }
+    },
+    "cse_impersonation": {
+      "bank_keywords": {
+        "patterns": [
+          "bank",
+          "sbi",
+          "icici",
+          "hdfc",
+          "axis",
+          "pnb"
+        ],
+        "score": 0.9,
+        "description": "Banking impersonation"
+      },
+      "telecom_keywords": {
+        "patterns": [
+          "airtel",
+          "jio",
+          "vi",
+          "bsnl"
+        ],
+        "score": 0.8,
+        "description": "Telecom impersonation"
+      },
+      "government_keywords": {
+        "patterns": [
+          "gov",
+          "nic",
+          "india",
+          "railway",
+          "irctc"
+        ],
+        "score": 0.9,
+        "description": "Government impersonation"
+      }
+    }
+  },
+  "confidence_factors": {
+    "model_agreement": {
+      "weight": 0.4,
+      "description": "Agreement between different models"
+    },
+    "ensemble_certainty": {
+      "weight": 0.3,
+      "description": "Distance from decision boundary"
+    },
+    "rule_confirmation": {
+      "weight": 0.2,
+      "description": "Rule-based confirmation"
+    },
+    "domain_characteristics": {
+      "weight": 0.1,
+      "description": "Domain characteristic analysis"
+    }
+  },
+  "feature_optimization": {
+    "total_features": 110,
+    "top_features": [
+      "domain_avg_subdomain_length",
+      "brand_overall_brand_risk",
+      "domain_is_suspicious_tld",
+      "lexical_fuzz_partial_ratio",
+      "brand_brand_name_modified",
+      "struct_subdomain_to_domain_ratio",
+      "brand_phonetic_similarity",
+      "brand_visual_brand_similarity",
+      "url_dot_count",
+      "lexical_fuzz_token_sort_ratio",
+      "lexical_fuzz_token_set_ratio",
+      "typo_edit_distance_ratio",
+      "lexical_levenshtein_ratio",
+      "domain_subdomain_count",
+      "brand_semantic_similarity",
+      "typo_visual_similarity",
+      "domain_max_subdomain_length",
+      "lexical_fuzz_ratio",
+      "lexical_longest_common_substring",
+      "risk_dga_score"
+    ],
+    "low_importance_features": [
+      "struct_alternating_alpha_digit",
+      "struct_excessive_subdomains",
+      "domain_numeric_subdomain",
+      "domain_is_legitimate_tld",
+      "brand_brand_prefix_combo",
+      "typo_qwerty_distance",
+      "typo_char_omission",
+      "url_keyboard_patterns",
+      "url_digit_count",
+      "domain_has_www",
+      "risk_url_shortener_pattern",
+      "typo_prefix_addition",
+      "brand_brand_keyword_combo",
+      "risk_tech_keywords",
+      "risk_phishing_keywords",
+      "struct_hyphen_heavy",
+      "typo_adjacent_key_typo",
+      "risk_dictionary_words",
+      "url_number_sequences",
+      "typo_bitsquatting_score",
+      "typo_char_substitution",
+      "risk_financial_keywords",
+      "url_has_path",
+      "url_has_query",
+      "url_underscore_count",
+      "url_special_char_count",
+      "url_alternating_case",
+      "url_has_https",
+      "url_has_fragment",
+      "url_uppercase_ratio",
+      "domain_vowel_cluster",
+      "url_has_ip",
+      "url_suspicious_keywords",
+      "url_brand_keywords",
+      "idn_suspicious_unicode",
+      "idn_is_idn",
+      "idn_unicode_char_count",
+      "idn_mixed_scripts",
+      "typo_char_swapping",
+      "idn_greek_chars",
+      "idn_arabic_chars",
+      "idn_zero_width_chars",
+      "idn_cyrillic_chars",
+      "struct_numeric_heavy",
+      "struct_unusual_length",
+      "risk_suspicious_tld_combo"
+    ]
+  },
+  "performance_targets": {
+    "overall_accuracy": 0.85,
+    "phishing_recall": 0.9,
+    "false_positive_rate": 0.05,
+    "throughput_per_minute": 1000
+  }
+}

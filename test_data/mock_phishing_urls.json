@@ -1,0 +1,93 @@
+{
+  "description": "Test/Mock data for PhishGuard AI demonstration purposes",
+  "attribution": "This model has been trained from a dataset taken from NCIIP Startup India AI GRAND CHALLENGE's Problem Statement data",
+  "test_phishing_urls": [
+    {
+      "url": "http://fake-sbi-bank-security.com/login",
+      "expected_result": "phishing",
+      "target_cse": "State Bank of India",
+      "attack_vector": "credential_harvesting",
+      "severity": "high"
+    },
+    {
+      "url": "https://airtel-customer-verification.net/update",
+      "expected_result": "phishing", 
+      "target_cse": "Airtel",
+      "attack_vector": "social_engineering",
+      "severity": "medium"
+    },
+    {
+      "url": "http://icici-secure-banking.org/verify",
+      "expected_result": "phishing",
+      "target_cse": "ICICI Bank",
+      "attack_vector": "credential_harvesting", 
+      "severity": "high"
+    },
+    {
+      "url": "https://fake-hdfc-netbanking.com/security",
+      "expected_result": "phishing",
+      "target_cse": "HDFC Bank",
+      "attack_vector": "financial_fraud",
+      "severity": "high"
+    },
+    {
+      "url": "http://bob-customer-alert.in/urgent",
+      "expected_result": "phishing",
+      "target_cse": "Bank of Baroda",
+      "attack_vector": "urgency_scam",
+      "severity": "medium"
+    }
+  ],
+  "test_legitimate_urls": [
+    {
+      "url": "https://www.onlinesbi.sbi/",
+      "expected_result": "legitimate",
+      "organization": "State Bank of India",
+      "category": "official_banking"
+    },
+    {
+      "url": "https://www.airtel.in/",
+      "expected_result": "legitimate", 
+      "organization": "Airtel",
+      "category": "official_telecom"
+    },
+    {
+      "url": "https://www.icicibank.com/",
+      "expected_result": "legitimate",
+      "organization": "ICICI Bank", 
+      "category": "official_banking"
+    },
+    {
+      "url": "https://www.hdfcbank.com/",
+      "expected_result": "legitimate",
+      "organization": "HDFC Bank",
+      "category": "official_banking"
+    },
+    {
+      "url": "https://www.bankofbaroda.in/",
+      "expected_result": "legitimate",
+      "organization": "Bank of Baroda",
+      "category": "official_banking"
+    }
+  ],
+  "test_scenarios": [
+    {
+      "scenario": "Banking Credential Theft",
+      "description": "Attackers impersonate major Indian banks to steal login credentials",
+      "common_patterns": [
+        "urgent account verification",
+        "security update required", 
+        "account suspension notice"
+      ]
+    },
+    {
+      "scenario": "Telecom Service Fraud", 
+      "description": "Fake telecom service pages targeting Airtel, Jio, Vi customers",
+      "common_patterns": [
+        "recharge bonus offers",
+        "KYC verification required",
+        "service activation needed"
+      ]
+    }
+  ]
+}
