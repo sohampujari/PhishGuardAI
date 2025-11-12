@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-03T10:43:59.788125",
+  "test_pairs_count": 100,
+  "base_performance": {
+    "total_time": 8.390921831130981,
+    "throughput_per_minute": 715.0585025997415,
+    "average_time_ms": 83.90921831130981,
+    "successful_predictions": 100
+  },
+  "optimized_performance": {
+    "total_time": 0.8746602535247803,
+    "throughput_per_minute": 6859.806394335046,
+    "average_time_ms": 8.746602535247803,
+    "successful_predictions": 100,
+    "cache_stats": {
+      "feature_cache_size": 10,
+      "prediction_cache_size": 10,
+      "caching_enabled": true
+    }
+  },
+  "improvement_metrics": {
+    "throughput_improvement_percent": 859.3349871926305,
+    "speed_improvement_percent": 89.57611248051768,
+    "srs_compliance_base": false,
+    "srs_compliance_optimized": true,
+    "optimization_successful": true
+  }
+}
