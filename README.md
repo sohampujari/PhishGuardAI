@@ -152,7 +152,7 @@ PhishGuard-AI/
 ```
 GET /api/stats
 ```
-Returns comprehensive threat statistics including:
+Returns comprehensive threat statistics, including:
 - Total threats detected
 - Success rate and performance metrics
 - Top targeted CSEs
@@ -223,7 +223,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email atharv5873@gmail.com or create an issue on GitHub.
+For support, create an issue on GitHub.
 
 ---
 
